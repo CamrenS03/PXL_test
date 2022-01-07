@@ -1,7 +1,7 @@
 <!doctype html>
 <html> 
 <head>
-<link rel='stylesheet' href='signature-pad.css'>
+<link rel='stylesheet' href='stsignOut.css'>
 <link rel='stylesheet' href='pxlCSS.css'>
 </head>
 
@@ -10,20 +10,19 @@
 	<form action="submit.php" onsubmit="return onSubmit(this)" method="post">
 		<div id='student'>
 			<label> Student Signing Out </label><br>
-			<input name="name" id='name' placeholder="Your name" required />
-		</div>
+			<input name="name" id='name' placeholder="Student name" required />
+		</div><br>
 		<div id='parent'>
 			<label> Parent Signature </label><br>
-			<canvas id="signature"></canvas>
+			<canvas id="signature" width='1500' height='400'></canvas>
 		</div>
 		<div>
 			<input type="hidden" name="signature" />
 		</div>
-		<div id='submit'>
-		<input type='submit' style='width: 25%; margin: auto'>
-		</div>
+		<button type='button' class='button' id='button'> Clear </button>
+		<input type='submit' class='button'>
 	 </form>
  </div>
-<script src='signaturePad.js'></script>
+<script src='stsignOut.js'></script>
 </body>
 </html>

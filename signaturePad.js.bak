@@ -5,9 +5,13 @@ var prevX, prevY;
 var currX, currY;
 var signature = document.getElementsByName('signature')[0];
 
+
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mouseup", stop);
 canvas.addEventListener("mousedown", start);
+canvas.addEventListener("touchmove", draw);
+canvas.addEventListener("touchend", stop);
+canvas.addEventListener("touchstart", start);
 
 function start(e) {
   drawing = true;
@@ -26,8 +30,8 @@ function draw(e) {
   // Test for touchmove event, this requires another property.
   var clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
   var clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
-  currX = clientX - findPos(this)[0];
-  currY = clientY - findPos(this)[1];
+  currX = clientX - canvas.offsetLeft;
+  currY = clientY - canvas.offsetTop;
   if (!prevX && !prevY) {
     prevX = currX;
     prevY = currY;

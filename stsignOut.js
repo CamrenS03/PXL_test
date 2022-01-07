@@ -5,6 +5,7 @@ var prevX, prevY;
 var currX, currY;
 var signature = document.getElementsByName('signature')[0];
 
+
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mouseup", stop);
 canvas.addEventListener("mousedown", start);
@@ -29,8 +30,8 @@ function draw(e) {
   // Test for touchmove event, this requires another property.
   var clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
   var clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
-  currX = clientX - findPos(this)[0];
-  currY = clientY - findPos(this)[1];
+  currX = clientX - canvas.offsetLeft;
+  currY = clientY - canvas.offsetTop;
   if (!prevX && !prevY) {
     prevX = currX;
     prevY = currY;
@@ -56,16 +57,9 @@ function onSubmit(e) {
   return false;
 }
 
-function findPos(obj) {
-	var curleft = curtop = 0;
-	if (obj.offsetParent) {
-		do {
-			curleft += obj.offsetLeft;
-			curtop += obj.offsetTop;
-		} while (obj = obj.offsetParent);
-		console.log(curleft);
-		console.log(curtop);
-		// return [curleft, curtop];
-	}
-	return [curleft, curtop];
+
+var clearB = document.getElementById('button');
+clearB.addEventListener('click', clear);
+function clear() {
+	ctx.clearRect(0,0, canvas.width, canvas.height);
 }
