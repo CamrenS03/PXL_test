@@ -1,0 +1,36 @@
+body {
+	float: left;
+}
+div.a {  
+	margin-left: 150px; 
+	margin-top: 115px;
+	font-size: 50px;
+	line-height: 70px;
+}
+div.b { 
+	margin-left: 150px; 
+	margin-top: 40px;
+	font-size: 50px;
+	line-height: 70px;
+}
+.nameEntry {
+	height: 50px;
+	width: 400px;
+	font-size: 50px;
+}
+.lb {
+	margin-right: 175px;
+}
+.radioB {
+	height: 30px;
+	width: 30px;
+}
+.submit {
+	width: 250px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: red;
+	font-family: sans-serif;
+	padding: 12px 24px; 
+	font-size: 40px
+}

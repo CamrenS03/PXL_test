@@ -1,0 +1,17 @@
+body {
+	background-color: lightblue;
+}
+
+table {
+	padding: 100px;
+	width: 100%;
+}
+
+button {
+	width: 550px;
+	height: 200px;
+	border-radius: 25px;
+	background-color: red;
+	font-size: 400%;
+	font-family: sans-serif;
+}

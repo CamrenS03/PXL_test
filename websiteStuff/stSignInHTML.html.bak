@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head> 
+	<title> Sign In Students </title>
+	<link rel='stylesheet' href='pxlCSS.css'>
+	<link rel='stylesheet' href='stSignInCSS.css'>
+</head>
+
+<body>
+	<div class='a'>
+	<form>
+	<label for='lastName' class='lb'> Last Name: </label>
+	<label for='firstName' class='lb' > First Name: </label>
+	<label for 'grade'> Grade </label> <br>
+	<input type='text' id='lastName' class='nameEntry'>
+	<input type='text' id='firstName' class='nameEntry'> 
+	<input type='radio' id='radio12' class='radioB' name='grade' value='12'>
+	<label for='radio12' style='margin-right: 25px'> 12 </label>
+	<input type='radio' id='radio11' class='radioB' name='grade' value='11'>
+	<label for='radio11' style='margin-right: 25px'> 11 </label>
+	<input type='radio' id='radio10' class='radioB' name='grade' value='10'>
+	<label for='radio10'> 10 </label>
+	</div>
+	<div class='b'>
+	<a> Have you been to PatriotXL before? </a>
+	<input type='radio' id='radioY' class='radioB' name='new' value='Yes'>
+	<label for='radioY' style='margin-right: 25px'> Yes </label>
+	<input type='radio' id='radioN' class='radioB' name='new' value='No'>
+	<label for='radioN' style='margin-right: 25px'> No </label>
+	</div>
+	<div class='b'>
+	<a> What are you here for? </a><br>
+	<input type='radio' id='radioM' class='radioB' name='subject' value='Math'>
+	<label for='radioM' style='margin-right: 25px'> Math </label>
+	<input type='radio' id='radioE' class='radioB' name='subject' value='English'>
+	<label for='radioE' style='margin-right: 25px'> English </label>
+	<input type='radio' id='radioS' class='radioB' name='subject' value='Science'>
+	<label for='radioS' style='margin-right: 25px'> Science </label>
+	<input type='radio' id='radioH' class='radioB' name='subject' value='History'>
+	<label for='radioH' style='margin-right: 25px'> History </label>
+	<input type='radio' id='radioO' class='radioB' name='subject'> <!--value='Other'-->
+	<input type='text' class='nameEntry' placeholder='Other'>
+	</div>
+	<div class='b'>
+	<a> Transportation </a><br>
+	<input type='radio' id='radioD' class='radioB' name='trans' value='Drives'>
+	<label for='radioD' style='margin-right: 25px'> I drive </label>
+	<input type='radio' id='radioW' class='radioB' name='trans' value='Walks'>
+	<label for='radioW' style='margin-right: 25px'> I walk </label>
+	<input type='radio' id='radioP' class='radioB' name='trans' value='Picked Up'>
+	<label for='radioP'> I'm Picked Up </label>
+	</div>
+	<div class='b' align='center'>
+	<input type='submit' class='submit'>
+	</div>
+	</form>
+	</div>
+</body>
+
+</html>
