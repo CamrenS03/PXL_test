@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title> Directory </title>
+<link rel='stylesheet' href='pxl.css'>
+	<style>
+		table {
+			padding: 100px;
+			width: 100%;
+		}
+
+		button {
+			width: 550px;
+			height: 200px;
+			border-radius: 25px;
+			background-color: red;
+			font-size: 400%;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<th><button id='signIn'>Sign In Student</button></th>
+			<th><button id='signOut'>Sign Out Student</button></th>
+		</tr>
+		<tr style='height:100px'>
+		</tr>
+		<tr>
+			<th><button type='button' id='records'>See Records</button></th>
+			<th><button type='button' id='logOut'>Log Out</button></th>
+		</tr>
+	</table>
+	<script>
+	var si = document.getElementById('signIn');
+	var so = document.getElementById('signOut');
+	var rc = document.getElementById('records');
+	var lo = document.getElementById('logOut');
+	
+	si.addEventListener('click', Window('stSignIn.html'));
+	so.addEventListener('click', Window('stSignOut.html'));
+	lo.addEventListener('click', Window('index.html'));
+	
+	function Window(x) {
+		window.location.href= x ;
+	}
+</body>
+
+</html>

@@ -14,19 +14,6 @@
 			font-size: 150%;
 		}
 	</style>
-</head>
-
-<h1> Welcome To PatriotXL Sign In </h1>
-
-<body>
-	<form>
-	<label for="username">Username:</label><br>
-	<input type="text" id="username" class='inputBox'><br>
-	<label for="pwd">Password:</label><br>
-	<input type="password" id="pwd" class='inputBox'><br>
-	<br>
-	</form>
-	<button type='button' id='signIn' style='padding: 12px 24px; font-size: 30px'> Sign In </button>
 	<script> 
 	var myBtn = document.getElementById('signIn');
 		
@@ -44,6 +31,19 @@
 		}
 	}
 	</script>
+</head>
+
+<h1> Welcome To PatriotXL Sign In </h1>
+
+<body>
+	<form>
+	<label for="username">Username:</label><br>
+	<input type="text" id="username" class='inputBox'><br>
+	<label for="pwd">Password:</label><br>
+	<input type="password" id="pwd" class='inputBox'><br>
+	<br>
+	</form>
+	<button type='button' id='signIn' style='padding: 12px 24px; font-size: 30px'> Sign In </button>
 </body>
 
 </html>
