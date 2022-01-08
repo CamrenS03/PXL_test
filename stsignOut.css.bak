@@ -5,7 +5,7 @@
 	justify-content: center;
 	box-sizing: border-box;
 	margin: auto;
-	margin-top: 2.5%;
+	margin-top: 2%;
 	width: 90%;
 	height: 90vh;
 	padding: 1%;
@@ -16,14 +16,6 @@ canvas#signature {
   background: white;
 }
 
-#student {
-	
-}
-
-#parent {
-	
-}
-
 label {
 	font-size: 350%;
 }
@@ -31,7 +23,7 @@ label {
 #name {
 	width: 1500px;
 	height: 100px;
-	font-size: 300%;
+	font-size: 400%;
 	border:	2px solid black;
 }
 

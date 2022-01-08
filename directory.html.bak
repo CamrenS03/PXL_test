@@ -23,29 +23,16 @@
 <body>
 	<table>
 		<tr>
-			<th><button id='signIn'>Sign In Student</button></th>
-			<th><button id='signOut'>Sign Out Student</button></th>
+			<th><button type='button' onclick='location.href="stSignIn.html"'>Sign In Student</button></th>
+			<th><button type='button' onclick='location.href="stSignOut.html"'>Sign Out Student</button></th>
 		</tr>
 		<tr style='height:100px'>
 		</tr>
 		<tr>
-			<th><button type='button' id='records'>See Records</button></th>
-			<th><button type='button' id='logOut'>Log Out</button></th>
+			<th><button type='button' onclick='location.href="stSignIn.html"'>See Records</button></th>
+			<th><button type='button' onclick='window.location.replace="index.html"'>Log Out</button></th>
 		</tr>
 	</table>
-	<script>
-	var si = document.getElementById('signIn');
-	var so = document.getElementById('signOut');
-	var rc = document.getElementById('records');
-	var lo = document.getElementById('logOut');
-	
-	si.addEventListener('click', Window('stSignIn.html'));
-	so.addEventListener('click', Window('stSignOut.html'));
-	lo.addEventListener('click', Window('index.html'));
-	
-	function Window(x) {
-		window.location.href= x ;
-	}
 </body>
 
 </html>

@@ -2,11 +2,13 @@
 <html> 
 <head>
 <link rel='stylesheet' href='stsignOut.css'>
-<link rel='stylesheet' href='pxlCSS.css'>
+<link rel='stylesheet' href='pxl.css'>
 </head>
 
 <body>
+<button type='button' id='backButton' onclick='location.href="directory.html"'> Back </button>
 <div id='all'>
+	
 	<form action="submit.php" onsubmit="return onSubmit(this)" method="post">
 		<div id='student'>
 			<label> Student Signing Out </label><br>
